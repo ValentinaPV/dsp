@@ -112,7 +112,9 @@ Elvis Presley had a twin brother who died at birth.  What is the probability tha
 ### Q6. Bayesian &amp; Frequentist Comparison  
 How do frequentist and Bayesian statistics compare?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Frequentist approaches to inferential statistics assume that a parameter *x* for a given population has a **single true value** and can be estimated by looking at the frequencies with which the individual values occur in a sample of said population. Taking the example of a coin-toss: if one were to toss a coin 10 times, and 4 of those times the coin landed on heads, a frequentist approach would dictate that p(heads) = 0.4
+>> 
+>> Bayesian statistics, however, treat parameter estimation as probabilistic. Instead of assuming there is a single value for *x* and that there is a single best estimate for it, Bayesian approaches believe there is a **range of plausible values** for the population's parameter *x*, each with its own associted probability distribution. The probability distributions for each plausible value of *x* is not simply derived from observing of the frequencies of occurence within the sample, but rather from conditional probability-like calculations which take into account prior knowedge or assumptions about the sample and population at hand. These *"priors"* tend to be one of the most criticized features of Bayesian approaches as some claim they can be problematically subjective.
 
 ---
 
