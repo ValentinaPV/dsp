@@ -86,14 +86,35 @@ Bayes' Theorem is an important tool in understanding what we really know, given 
 
 Elvis Presley had a twin brother who died at birth.  What is the probability that Elvis was an identical twin? Assume we observe the following probabilities in the population: fraternal twin is 1/125 and identical twin is 1/300.  
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> The above problem can be expressed as "p(identical twin | twin)", which can be read as "the probability that Elvis was an identical twin given that he was a twin".
+>> 
+>> Bayes' Theorem states that: p(A|B) = p(A)x p(B|A) / p(B)
+>>
+>> Thus:
+>> p(identical twin | twin) = p(identical twin) x p(twin | identical twin) / p(twin)
+>>
+>> From the prompt, we can derive that the probability of being a twin (indiscriminate of type) is the sum of the probability of being either type of twin as there is no overlap between the cases. Hence:
+>>
+>> p(twin) = 1/125 + 1/300 = 17/1500
+>> 
+>> We can also establish that the probability of being a twin given that one is an **identical** twin is 100%, therefore:
+>>
+>> p(twin | identical twin) = 1
+>> 
+>> Going back to our formula and plugging in the above values:
+>>
+>> p(identical twin | twin) = 1/300 x 1 / 17/1500 = 5/17
+>> 
+>> **We can conclude that given that Elvis was a twin, he had a 5/17 probability of also being an identical twin.**
 
 ---
 
 ### Q6. Bayesian &amp; Frequentist Comparison  
 How do frequentist and Bayesian statistics compare?
 
->> REPLACE THIS TEXT WITH YOUR RESPONSE
+>> Frequentist approaches to inferential statistics assume that a parameter *x* for a given population has a **single true value** and can be estimated by looking at the frequencies with which the individual values occur in a sample of said population. Taking the example of a coin-toss: if one were to toss a coin 10 times, and 4 of those times the coin landed on heads, a frequentist approach would dictate that p(heads) = 0.4
+>> 
+>> Bayesian statistics, however, treat parameter estimation as probabilistic. Instead of assuming there is a single value for *x* and that there is a single best estimate for it, Bayesian approaches believe there is a **range of plausible values** for the population's parameter *x*, each with its own associted probability distribution. The probability distributions for each plausible value of *x* is not simply derived from observing of the frequencies of occurence within the sample, but rather from conditional probability-like calculations which take into account prior knowedge or assumptions about the sample and population at hand. These *"priors"* tend to be one of the most criticized features of Bayesian approaches as some claim they can be problematically subjective.
 
 ---
 
